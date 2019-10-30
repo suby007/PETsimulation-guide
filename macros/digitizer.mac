@@ -1,0 +1,70 @@
+#========================================================================================
+#   D I G I T I Z E R: DETECTOR ELECTRONIC RESPONSE
+#========================================================================================
+
+#       D I G I T I Z E R
+/gate/digitizer/Singles/insert adder
+/gate/digitizer/Singles/insert readout
+/gate/digitizer/Singles/readout/setDepth 4
+
+#	Block Energy Resolution
+/gate/digitizer/Singles/insert blurring
+/gate/digitizer/Singles/blurring/setResolution 0.117
+/gate/digitizer/Singles/blurring/setEnergyOfReference 511.0 keV
+
+#	Block CFD Threshold
+/gate/digitizer/Singles/insert thresholder
+/gate/digitizer/Singles/thresholder/setThreshold 150.0 keV 
+
+#module deadtime
+/gate/digitizer/Singles/insert deadtime
+/gate/digitizer/Singles/deadtime/setDeadTime 120.0 ns
+/gate/digitizer/Singles/deadtime/setMode paralysable
+/gate/digitizer/Singles/deadtime/chooseDTVolume module
+
+#	Qualified Singles
+/gate/digitizer/Singles/insert thresholder
+/gate/digitizer/Singles/thresholder/setThreshold 435.0 keV
+/gate/digitizer/Singles/insert upholder
+/gate/digitizer/Singles/upholder/setUphold 650.0 keV
+
+
+# window deadtime
+/gate/digitizer/Singles/insert deadtime
+/gate/digitizer/Singles/name deadtime2
+/gate/digitizer/Singles/deadtime2/setDeadTime 80.0 ns
+/gate/digitizer/Singles/deadtime2/setMode nonparalysable
+/gate/digitizer/Singles/deadtime2/chooseDTVolume rsector
+
+# #       COINCIDENCE Sorter
+#/gate/digitizer/name Coincidences
+#/gate/digitizer/insert coincidenceSorter
+#/gate/digitizer/Coincidences/setInputName Singles
+#/gate/digitizer/Coincidences/setWindow 4.1 ns
+#/gate/digitizer/Coincidences/MultiplesPolicy takeAllGoods
+#/gate/digitizer/Coincidences/allPulseOpenCoincGate 1
+#/gate/digitizer/Coincidences/minSectorDifference 3
+
+#/gate/digitizer/name Delay
+#/gate/digitizer/insert coincidenceSorter
+#/gate/digitizer/Delay/setInputName Singles
+#/gate/digitizer/Delay/setOffset 500.0 ns
+#/gate/digitizer/Delay/setWindow 4.1 ns
+#/gate/digitizer/Delay/MultiplesPolicy takeAllGoods
+#/gate/digitizer/Delay/allPulseOpenCoincGate 1
+#/gate/digitizer/Delay/minSectorDifference 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

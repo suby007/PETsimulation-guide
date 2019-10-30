@@ -1,0 +1,9 @@
+
+
+#/gate/application/setTimeSlice   100.0 	s 
+#/gate/application/setTimeStart   0.0 	s
+#/gate/application/setTimeStop    100.0 	s
+
+# RUN!
+
+#/gate/application/startDAQ

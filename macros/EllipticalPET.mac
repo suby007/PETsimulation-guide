@@ -1,0 +1,211 @@
+
+# 	VISUALIZATION
+
+/vis/disable
+#/control/execute                    	visual.mac
+
+# 	VERBOSE
+
+/control/execute                    	verbose.mac
+
+# Materials
+
+/gate/geometry/setMaterialDatabase 		GateMaterials.db
+
+# 	W O R L D
+
+/gate/world/geometry/setXLength			1000	mm
+/gate/world/geometry/setYLength			1000	mm
+/gate/world/geometry/setZLength			2200	mm
+/gate/world/vis/setVisible			0
+
+# 	GEOMETRY
+
+/gate/world/daughters/name			cylindricalPET
+/gate/world/daughters/insert			cylinder
+/gate/cylindricalPET/placement/setTranslation	0.0 0.0 0.0 cm
+/gate/cylindricalPET/geometry/setRmax		420.0 mm
+/gate/cylindricalPET/geometry/setRmin		235.0 mm
+/gate/cylindricalPET/geometry/setHeight		2000.0 mm
+/gate/cylindricalPET/setMaterial		Air
+/gate/cylindricalPET/vis/forceWireframe
+/gate/cylindricalPET/vis/setColor		magenta
+/gate/cylindricalPET/vis/setVisible 		0
+
+#	rsector
+/gate/cylindricalPET/daughters/name           	rsector
+/gate/cylindricalPET/daughters/insert         	box
+/gate/rsector/placement/setTranslation          392.0 0.0 0.0 	mm
+/gate/rsector/geometry/setXLength               19.1 		mm
+/gate/rsector/geometry/setYLength               100.15 		mm
+/gate/rsector/geometry/setZLength               1943.04		mm
+
+/gate/rsector/setMaterial                       Air
+/gate/rsector/vis/setVisible 			1
+/gate/rsector/vis/forceWireframe
+/gate/rsector/vis/setColor                    	black
+
+#####################inserir aluminium sheet 1mm as rsector daughter
+
+#	M O D U L E
+/gate/rsector/daughters/name                    module
+/gate/rsector/daughters/insert                  box
+/gate/module/placement/setTranslation         	0.0 0.0 0.0 	cm
+/gate/module/geometry/setXLength              	18.1 		mm
+/gate/module/geometry/setYLength              	100.15 		mm
+/gate/module/geometry/setZLength	        240.38 		mm
+/gate/module/setMaterial      		        BaSO4
+/gate/module/vis/setVisible   		        1
+/gate/module/vis/forceWireframe
+/gate/module/vis/setColor             	      	red
+
+#      S U B   M O D U L E 
+/gate/module/daughters/name                     submodule
+/gate/module/daughters/insert                   box
+/gate/submodule/placement/setTranslation        0.0 0.0 0.0 	cm
+/gate/submodule/geometry/setXLength             18.1 		mm
+/gate/submodule/geometry/setYLength             100.15 		mm
+/gate/submodule/geometry/setZLength	        240.38 		mm
+/gate/submodule/setMaterial      		BaSO4	
+/gate/submodule/vis/setVisible   		0
+
+#######################block filho do submodule
+#	B L O C K
+/gate/submodule/daughters/name                  block
+/gate/submodule/daughters/insert                box
+/gate/block/placement/setTranslation          	0.0 0.0 0.0 	cm
+/gate/block/geometry/setXLength               	18.1 		mm
+/gate/block/geometry/setYLength               	20.03 		mm
+/gate/block/geometry/setZLength               	17.17 		mm
+/gate/block/setMaterial                       	BaSO4
+/gate/block/vis/setVisible			1
+/gate/block/vis/setColor			magenta                    
+/gate/block/vis/forceWireframe			
+
+
+#	C R Y S T A L
+/gate/block/daughters/name                    	crystal
+/gate/block/daughters/insert                  	box
+/gate/crystal/placement/setTranslation        	0.0 0.0 0.0 	cm
+/gate/crystal/geometry/setXLength             	18.1 		mm
+/gate/crystal/geometry/setYLength             	2.76 		mm
+/gate/crystal/geometry/setZLength             	2.76 		mm
+
+####################### material do meu cristal
+
+/gate/crystal/setMaterial                     	BaSO4
+/gate/crystal/vis/setVisible                  	0
+
+
+#	L Y S O   l a y e r
+/gate/crystal/daughters/name                  	LYSO
+/gate/crystal/daughters/insert                	box
+/gate/LYSO/placement/setTranslation           	0.0 0.0 0.0 	cm
+/gate/LYSO/geometry/setXLength                	18.1 		mm
+/gate/LYSO/geometry/setYLength                	2.76 		mm
+/gate/LYSO/geometry/setZLength                	2.76 		mm
+/gate/LYSO/setMaterial                        	LYSO
+/gate/LYSO/vis/setColor                       	blue
+/gate/LYSO/vis/forceWireframe
+/gate/LYSO/vis/setVisible                     	1	
+
+
+#	R E P E A T    C R Y S T A L
+/gate/crystal/repeaters/insert                	cubicArray
+/gate/crystal/cubicArray/setRepeatNumberX     	1
+/gate/crystal/cubicArray/setRepeatNumberY     	7
+/gate/crystal/cubicArray/setRepeatNumberZ     	6
+/gate/crystal/cubicArray/setRepeatVector      	0.0 2.85 2.85 	mm
+
+#	R E P E A T    BLOCK
+/gate/block/repeaters/insert             	cubicArray
+/gate/block/cubicArray/setRepeatNumberX  	1
+/gate/block/cubicArray/setRepeatNumberY  	5
+/gate/block/cubicArray/setRepeatNumberZ  	14
+/gate/block/cubicArray/setRepeatVector   	0.0 20.03 17.17 mm
+
+/gate/module/repeaters/insert                	cubicArray
+/gate/module/cubicArray/setRepeatNumberX     	1
+/gate/module/cubicArray/setRepeatNumberY     	1
+/gate/module/cubicArray/setRepeatNumberZ     	8
+/gate/module/cubicArray/setRepeatVector      	0.0 0.0 242.88 	mm
+
+
+#	R E P E A T    R S E C T O R 
+
+/gate/rsector/repeaters/insert				genericRepeater
+/gate/rsector/genericRepeater/setPlacementsFilename 	myvolume.placements
+/gate/rsector/genericRepeater/useRelativeTranslation 	0
+
+
+#	A T T A C H    S Y S T E M 
+/gate/systems/cylindricalPET/rsector/attach   		rsector
+/gate/systems/cylindricalPET/module/attach    		module
+/gate/systems/cylindricalPET/submodule/attach    	block
+/gate/systems/cylindricalPET/crystal/attach   		crystal
+/gate/systems/cylindricalPET/layer0/attach    		LYSO
+
+#	A T T A C H    C R Y S T A L  SD
+
+/gate/LYSO/attachCrystalSD
+/gate/systems/cylindricalPET/describe
+
+#========================================================================================
+#                                     P H A N T O M 
+#======================================================================================== 
+/control/execute		phantom_spatial_resNEMA.mac
+
+#========================================================================================
+# 				         PHYSICS
+#========================================================================================
+/gate/physics/addPhysicsList 	emstandard
+
+#========================================================================================
+# 					  CUTS
+#========================================================================================
+/control/execute 	cuts.mac
+
+#========================================================================================
+# 				     INITIALISATION
+#========================================================================================
+/gate/run/initialize
+
+#========================================================================================
+# 				       DIGITIZER
+#========================================================================================
+/control/execute	digitizer.mac
+
+#========================================================================================
+#                           P A R T I C L E   S O U R C E
+#========================================================================================
+/control/execute	source_spatial_resNEMA.mac
+
+#========================================================================================
+#                                 D A T A   O U T P U T
+#========================================================================================
+/gate/output/root/enable
+/gate/output/root/setFileName             dados
+/gate/output/root/setRootHitFlag           0
+/gate/output/root/setRootSinglesFlag       1
+#/gate/output/root/setRootCoincidencesFlag 0
+#/gate/output/root/setRootDelayFlag 	   0
+
+#========================================================================================
+#  R A N D O M   E N G I N E  A N D  S E E D
+#========================================================================================
+# JamesRandom Ranlux64 MersenneTwister
+/gate/random/setEngineName JamesRandom
+#/gate/random/setEngineSeed default
+#/gate/random/setEngineSeed auto
+#/gate/random/setEngineSeed 123456789
+/gate/random/setEngineSeed default
+#/gate/random/resetEngineFrom fileName
+/gate/random/verbose 0
+
+#=====================================================
+#   M E A S U R E M E N T   S E T T I N G S   
+#=====================================================
+/control/execute	start.mac
+
+
+

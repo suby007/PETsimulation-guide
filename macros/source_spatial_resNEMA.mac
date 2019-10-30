@@ -1,0 +1,138 @@
+# posicionamento das fontes
+#
+# fonte		x	y	z
+#   1            0     10       0    mm
+#   2		 0    100       0    mm	
+#   3          100      0       0    mm
+#   4		 0     10     500    mm	
+#   5		 0    100     500    mm	
+#   6	       100      0     500    mm
+
+
+# Sphere 1
+/gate/source/addSource						F18source1
+
+/gate/source/F18source1/setActivity				4000000. Bq
+#/gate/source/F18source1/setActivity				0. Bq
+
+/gate/source/F18source1/gps/particle 				e+ 
+/gate/source/F18source1/gps/energytype 				Fluor18 
+/gate/source/F18source1/setForcedUnstableFlag 			true 
+/gate/source/F18source1/setForcedHalfLife 			6586 s
+/gate/source/F18source1/gps/type 				Volume
+/gate/source/F18source1/gps/shape 				Sphere
+/gate/source/F18source1/gps/radius 				1.0 mm
+/gate/source/F18source1/gps/angtype 				iso
+/gate/source/F18source1/gps/centre 				0.0 10.0 0.0 mm
+/gate/source/F18source1/visualize				red
+/gate/source/F18source1/gps/confine 				phantom1
+
+
+
+
+# Sphere 2
+/gate/source/addSource						F18source2
+
+#/gate/source/F18source2/setActivity				4000000. Bq
+/gate/source/F18source2/setActivity				0. Bq
+
+/gate/source/F18source2/gps/particle 				e+ 
+/gate/source/F18source2/gps/energytype 				Fluor18 
+/gate/source/F18source2/setForcedUnstableFlag 			true 
+/gate/source/F18source2/setForcedHalfLife 			6586 s
+/gate/source/F18source2/gps/type 				Volume
+/gate/source/F18source2/gps/shape 				Sphere
+/gate/source/F18source2/gps/radius 				1.0 mm
+/gate/source/F18source2/gps/angtype 				iso
+/gate/source/F18source2/gps/centre 				0.0 100.0 0.0 mm
+/gate/source/F18source2/visualize				red
+/gate/source/F18source2/gps/confine 				phantom2
+
+
+
+
+# Sphere 3
+/gate/source/addSource						F18source3
+
+#/gate/source/F18source3/setActivity				4000000. Bq
+/gate/source/F18source3/setActivity				0. Bq
+
+/gate/source/F18source3/gps/particle 				e+ 
+/gate/source/F18source3/gps/energytype 				Fluor18 
+/gate/source/F18source3/setForcedUnstableFlag 			true 
+/gate/source/F18source3/setForcedHalfLife 			6586 s
+/gate/source/F18source3/gps/type 				Volume
+/gate/source/F18source3/gps/shape 				Sphere
+/gate/source/F18source3/gps/radius 				1.0 mm
+/gate/source/F18source3/gps/angtype 				iso
+/gate/source/F18source3/gps/centre 				100.0 0.0 0.0 mm
+/gate/source/F18source3/visualize				red
+/gate/source/F18source3/gps/confine 				phantom3
+
+
+
+
+# Sphere 4
+/gate/source/addSource						F18source4
+
+#/gate/source/F18source4/setActivity				4000000. Bq
+/gate/source/F18source4/setActivity				0. Bq
+
+/gate/source/F18source4/gps/particle 				e+ 
+/gate/source/F18source4/gps/energytype 				Fluor18 
+/gate/source/F18source4/setForcedUnstableFlag 			true 
+/gate/source/F18source4/setForcedHalfLife 			6586 s
+/gate/source/F18source4/gps/type 				Volume
+/gate/source/F18source4/gps/shape 				Sphere
+/gate/source/F18source4/gps/radius 				1.0 mm
+/gate/source/F18source4/gps/angtype 				iso
+/gate/source/F18source4/gps/centre 				0.0 10.0 500.0 mm
+/gate/source/F18source4/visualize				red
+/gate/source/F18source4/gps/confine 				phantom4
+
+
+
+
+# Sphere 5
+/gate/source/addSource						F18source5
+
+#/gate/source/F18source5/setActivity				4000000. Bq
+/gate/source/F18source5/setActivity				0. Bq
+
+/gate/source/F18source5/gps/particle 				e+ 
+/gate/source/F18source5/gps/energytype 				Fluor18 
+/gate/source/F18source5/setForcedUnstableFlag 			true 
+/gate/source/F18source5/setForcedHalfLife 			6586 s
+/gate/source/F18source5/gps/type 				Volume
+/gate/source/F18source5/gps/shape 				Sphere
+/gate/source/F18source5/gps/radius 				1.0 mm
+/gate/source/F18source5/gps/angtype 				iso
+/gate/source/F18source5/gps/centre 				100.0 0.0 500.0 mm
+/gate/source/F18source5/visualize				red
+/gate/source/F18source5/gps/confine 				phantom5
+
+
+
+
+# Sphere 6
+/gate/source/addSource						F18source6
+
+#/gate/source/F18source6/setActivity				4000000. Bq
+/gate/source/F18source6/setActivity				0. Bq
+
+/gate/source/F18source6/gps/particle 				e+ 
+/gate/source/F18source6/gps/energytype 				Fluor18 
+/gate/source/F18source6/setForcedUnstableFlag 			true 
+/gate/source/F18source6/setForcedHalfLife 			6586 s
+/gate/source/F18source6/gps/type 				Volume
+/gate/source/F18source6/gps/shape 				Sphere
+/gate/source/F18source6/gps/radius 				1.0 mm
+/gate/source/F18source6/gps/angtype 				iso
+/gate/source/F18source6/gps/centre 				0.0 100.0 500.0 mm
+/gate/source/F18source6/visualize				red
+/gate/source/F18source6/gps/confine 				phantom6
+
+
+
+/gate/source/list
+

@@ -1,0 +1,87 @@
+#=====================================================
+#  P H A N T O M
+#=====================================================
+
+#	NEMA PHANTOM
+
+/gate/world/daughters/name                    	phantom1
+/gate/world/daughters/insert                  	sphere
+
+/gate/phantom1/geometry/setRmax   		2 mm
+/gate/phantom1/geometry/setRmin	 		1 mm
+/gate/phantom1/setMaterial                     	Glass
+/gate/phantom1/vis/forceWireframe
+/gate/phantom1/placement/setTranslation 		0.0 100.0 0.0 mm
+/gate/phantom1/vis/setColor                    	red
+
+
+
+/gate/world/daughters/name                    	phantom2
+/gate/world/daughters/insert                  	sphere
+
+/gate/phantom2/geometry/setRmax   		2 mm
+/gate/phantom2/geometry/setRmin	 		1 mm
+/gate/phantom2/setMaterial                     	Glass
+/gate/phantom2/vis/forceWireframe
+/gate/phantom2/placement/setTranslation 	0.0 0.0 0.0 mm
+/gate/phantom2/vis/setColor                    	red
+
+
+/gate/world/daughters/name                    	phantom3
+/gate/world/daughters/insert                  	sphere
+
+/gate/phantom3/geometry/setRmax   		2 mm
+/gate/phantom3/geometry/setRmin	 		1 mm
+/gate/phantom3/setMaterial                     	Glass
+/gate/phantom3/vis/forceWireframe
+/gate/phantom3/placement/setTranslation 	100.0 0.0 0.0 mm
+/gate/phantom3/vis/setColor                    	red
+
+
+
+/gate/world/daughters/name                    	phantom4
+/gate/world/daughters/insert                  	sphere
+
+/gate/phantom4/geometry/setRmax   		2 mm
+/gate/phantom4/geometry/setRmin	 		1 mm
+/gate/phantom4/setMaterial                     	Glass
+/gate/phantom4/vis/forceWireframe
+/gate/phantom4/placement/setTranslation 	0.0 0.0 500.0 mm
+/gate/phantom4/vis/setColor                    	red
+
+
+/gate/world/daughters/name                    	phantom5
+/gate/world/daughters/insert                  	sphere
+
+/gate/phantom5/geometry/setRmax   		2 mm
+/gate/phantom5/geometry/setRmin	 		1 mm
+/gate/phantom5/setMaterial                     	Glass
+/gate/phantom5/vis/forceWireframe
+/gate/phantom5/placement/setTranslation 	100.0 0.0 500.0 mm
+/gate/phantom5/vis/setColor                    	red
+
+/gate/world/daughters/name                    	phantom6
+/gate/world/daughters/insert                  	sphere
+
+/gate/phantom6/geometry/setRmax   		2 mm
+/gate/phantom6/geometry/setRmin	 		1 mm
+/gate/phantom6/setMaterial                     	Glass
+/gate/phantom6/vis/forceWireframe
+/gate/phantom6/placement/setTranslation 	0.0 100.0 500.0 mm
+/gate/phantom6/vis/setColor                    	red
+
+
+
+
+
+
+
+/gate/phantom1/attachPhantomSD
+/gate/phantom2/attachPhantomSD
+/gate/phantom3/attachPhantomSD
+/gate/phantom4/attachPhantomSD
+/gate/phantom5/attachPhantomSD
+/gate/phantom6/attachPhantomSD
+
+
+

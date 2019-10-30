@@ -1,0 +1,136 @@
+/gate/physics/Gamma/SetCutInRegion      LYSO 1.0 cm
+/gate/physics/Electron/SetCutInRegion   LYSO 1.0 cm
+/gate/physics/Positron/SetCutInRegion   LYSO 1.0 cm
+
+/gate/physics/Gamma/SetCutInRegion      phantom1 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom1 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom1 0.1 mm
+/gate/physics/SetMaxStepSizeInRegion    phantom1 0.01 mm
+
+/gate/physics/Gamma/SetCutInRegion      phantom2 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom2 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom2 0.1 mm
+/gate/physics/SetMaxStepSizeInRegion    phantom2 0.01 mm
+
+/gate/physics/Gamma/SetCutInRegion      phantom3 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom3 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom3 0.1 mm
+/gate/physics/SetMaxStepSizeInRegion    phantom3 0.01 mm
+
+/gate/physics/Gamma/SetCutInRegion      phantom4 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom4 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom4 0.1 mm
+/gate/physics/SetMaxStepSizeInRegion    phantom4 0.01 mm
+
+/gate/physics/Gamma/SetCutInRegion      phantom5 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom5 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom5 0.1 mm
+/gate/physics/SetMaxStepSizeInRegion    phantom5 0.01 mm
+
+/gate/physics/Gamma/SetCutInRegion      phantom6 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom6 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom6 0.1 mm
+/gate/physics/SetMaxStepSizeInRegion    phantom6 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom7 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom7 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom7 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom7 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom8 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom8 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom8 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom8 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom9 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom9 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom9 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom9 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom10 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom10 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom10 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom10 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom11 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom11 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom11 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom11 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom12 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom12 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom12 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom12 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom13 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom13 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom13 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom13 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom14 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom14 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom14 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom14 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom15 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom15 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom15 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom15 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom16 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom16 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom16 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom16 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom17 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom17 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom17 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom17 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom18 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom18 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom18 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom18 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom19 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom19 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom19 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom19 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom20 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom20 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom20 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom20 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom21 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom21 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom21 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom21 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom22 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom22 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom22 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom22 0.01 mm#
+
+#/gate/physics/Gamma/SetCutInRegion      phantom23 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom23 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom23 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom23 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom24 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom24 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom24 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom24 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom25 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom25 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom25 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom25 0.01 mm
+
+#/gate/physics/Gamma/SetCutInRegion      phantom26 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   phantom26 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   phantom26 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion    phantom26 0.01 mm
+
+
+

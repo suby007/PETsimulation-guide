@@ -1,0 +1,482 @@
+# posicionamento das fontes
+#
+
+# fonte		x	y	z
+#   1            0     10       0    mm
+#   2		 0     50       0    mm	
+#   3            0    100       0    mm
+#   4		 0    150       0    mm	
+#   5		50      0       0    mm	
+#   6	        50     50       0    mm
+#   7           50    100       0    mm
+#   8           50    150       0    mm
+#   9	       100      0       0    mm	
+#  10          100     50       0    mm
+#  11	       100    100       0    mm	
+#  12	       100    150       0    mm	
+#  13	       150      0       0    mm
+
+
+# Sphere 1
+/gate/source/addSource						F18source1
+/gate/source/F18source1/setActivity				100000. Bq
+/gate/source/F18source1/gps/particle 				e+ 
+/gate/source/F18source1/gps/energytype 				Fluor18 
+/gate/source/F18source1/setForcedUnstableFlag 			true 
+/gate/source/F18source1/setForcedHalfLife 			6586 s
+/gate/source/F18source1/gps/type 				Volume
+/gate/source/F18source1/gps/shape 				Sphere
+/gate/source/F18source1/gps/radius 				1.0 mm
+/gate/source/F18source1/gps/angtype 				iso
+/gate/source/F18source1/gps/centre 				0.0 10.0 0.0 mm
+/gate/source/F18source1/visualize				red
+/gate/source/F18source1/gps/confine 				phantom
+
+
+
+
+# Sphere 2
+/gate/source/addSource						F18source2
+/gate/source/F18source2/setActivity				100000. Bq
+/gate/source/F18source2/gps/particle 				e+ 
+/gate/source/F18source2/gps/energytype 				Fluor18 
+/gate/source/F18source2/setForcedUnstableFlag 			true 
+/gate/source/F18source2/setForcedHalfLife 			6586 s
+/gate/source/F18source2/gps/type 				Volume
+/gate/source/F18source2/gps/shape 				Sphere
+/gate/source/F18source2/gps/radius 				1.0 mm
+/gate/source/F18source2/gps/angtype 				iso
+/gate/source/F18source2/gps/centre 				0.0 50.0 0.0 mm
+/gate/source/F18source2/visualize				red
+/gate/source/F18source2/gps/confine 				phantom2
+
+
+
+
+# Sphere 3
+/gate/source/addSource						F18source3
+/gate/source/F18source3/setActivity				100000. Bq
+/gate/source/F18source3/gps/particle 				e+ 
+/gate/source/F18source3/gps/energytype 				Fluor18 
+/gate/source/F18source3/setForcedUnstableFlag 			true 
+/gate/source/F18source3/setForcedHalfLife 			6586 s
+/gate/source/F18source3/gps/type 				Volume
+/gate/source/F18source3/gps/shape 				Sphere
+/gate/source/F18source3/gps/radius 				1.0 mm
+/gate/source/F18source3/gps/angtype 				iso
+/gate/source/F18source3/gps/centre 				0.0 100.0 0.0 mm
+/gate/source/F18source3/visualize				red
+/gate/source/F18source3/gps/confine 				phantom3
+
+
+
+
+# Sphere 4
+/gate/source/addSource						F18source4
+/gate/source/F18source4/setActivity				100000. Bq
+/gate/source/F18source4/gps/particle 				e+ 
+/gate/source/F18source4/gps/energytype 				Fluor18 
+/gate/source/F18source4/setForcedUnstableFlag 			true 
+/gate/source/F18source4/setForcedHalfLife 			6586 s
+/gate/source/F18source4/gps/type 				Volume
+/gate/source/F18source4/gps/shape 				Sphere
+/gate/source/F18source4/gps/radius 				1.0 mm
+/gate/source/F18source4/gps/angtype 				iso
+/gate/source/F18source4/gps/centre 				0.0 150.0 0.0 mm
+/gate/source/F18source4/visualize				red
+/gate/source/F18source4/gps/confine 				phantom4
+
+
+
+
+# Sphere 5
+/gate/source/addSource						F18source5
+/gate/source/F18source5/setActivity				100000. Bq
+/gate/source/F18source5/gps/particle 				e+ 
+/gate/source/F18source5/gps/energytype 				Fluor18 
+/gate/source/F18source5/setForcedUnstableFlag 			true 
+/gate/source/F18source5/setForcedHalfLife 			6586 s
+/gate/source/F18source5/gps/type 				Volume
+/gate/source/F18source5/gps/shape 				Sphere
+/gate/source/F18source5/gps/radius 				1.0 mm
+/gate/source/F18source5/gps/angtype 				iso
+/gate/source/F18source5/gps/centre 				0.0 200.0 0.0 mm
+/gate/source/F18source5/visualize				red
+/gate/source/F18source5/gps/confine 				phantom5
+
+
+
+
+# Sphere 6
+/gate/source/addSource						F18source6
+/gate/source/F18source6/setActivity				100000. Bq
+/gate/source/F18source6/gps/particle 				e+ 
+/gate/source/F18source6/gps/energytype 				Fluor18 
+/gate/source/F18source6/setForcedUnstableFlag 			true 
+/gate/source/F18source6/setForcedHalfLife 			6586 s
+/gate/source/F18source6/gps/type 				Volume
+/gate/source/F18source6/gps/shape 				Sphere
+/gate/source/F18source6/gps/radius 				1.0 mm
+/gate/source/F18source6/gps/angtype 				iso
+/gate/source/F18source6/gps/centre 				50.0 0.0 0.0 mm
+/gate/source/F18source6/visualize				red
+/gate/source/F18source6/gps/confine 				phantom6
+
+# Sphere 7
+/gate/source/addSource						F18source7
+/gate/source/F18source7/setActivity				100000. Bq
+/gate/source/F18source7/gps/particle 				e+ 
+/gate/source/F18source7/gps/energytype 				Fluor18 
+/gate/source/F18source7/setForcedUnstableFlag 			true 
+/gate/source/F18source7/setForcedHalfLife 			6586 s
+/gate/source/F18source7/gps/type 				Volume
+/gate/source/F18source7/gps/shape 				Sphere
+/gate/source/F18source7/gps/radius 				1.0 mm
+/gate/source/F18source7/gps/angtype 				iso
+/gate/source/F18source7/gps/centre 				100.0 0.0 0.0 mm
+/gate/source/F18source7/visualize				red
+/gate/source/F18source7/gps/confine 				phantom7
+
+
+# Sphere 8
+/gate/source/addSource						F18source8
+/gate/source/F18source8/setActivity				100000. Bq
+/gate/source/F18source8/gps/particle 				e+ 
+/gate/source/F18source8/gps/energytype 				Fluor18 
+/gate/source/F18source8/setForcedUnstableFlag 			true 
+/gate/source/F18source8/setForcedHalfLife 			6586 s
+/gate/source/F18source8/gps/type 				Volume
+/gate/source/F18source8/gps/shape 				Sphere
+/gate/source/F18source8/gps/radius 				1.0 mm
+/gate/source/F18source8/gps/angtype 				iso
+/gate/source/F18source8/gps/centre 				150.0 0.0 0.0 mm
+/gate/source/F18source8/visualize				red
+/gate/source/F18source8/gps/confine 				phantom8
+
+
+
+
+# Sphere 9
+/gate/source/addSource						F18source9
+/gate/source/F18source9/setActivity				100000. Bq
+/gate/source/F18source9/gps/particle 				e+ 
+/gate/source/F18source9/gps/energytype 				Fluor18 
+/gate/source/F18source9/setForcedUnstableFlag 			true 
+/gate/source/F18source9/setForcedHalfLife 			6586 s
+/gate/source/F18source9/gps/type 				Volume
+/gate/source/F18source9/gps/shape 				Sphere
+/gate/source/F18source9/gps/radius 				1.0 mm
+/gate/source/F18source9/gps/angtype 				iso
+/gate/source/F18source9/gps/centre 				200.0 0.0 0.0 mm
+/gate/source/F18source9/visualize				red
+/gate/source/F18source9/gps/confine 				phantom9
+
+
+
+
+# Sphere 10
+/gate/source/addSource						F18source10
+/gate/source/F18source10/setActivity				100000. Bq
+/gate/source/F18source10/gps/particle 				e+ 
+/gate/source/F18source10/gps/energytype 			Fluor18 
+/gate/source/F18source10/setForcedUnstableFlag 			true 
+/gate/source/F18source10/setForcedHalfLife 			6586 s
+/gate/source/F18source10/gps/type 				Volume
+/gate/source/F18source10/gps/shape 				Sphere
+/gate/source/F18source10/gps/radius 				1.0 mm
+/gate/source/F18source10/gps/angtype 				iso
+/gate/source/F18source10/gps/centre 				50.0 50.0 0.0 mm
+/gate/source/F18source10/visualize				red
+/gate/source/F18source10/gps/confine 				phantom10
+
+
+
+
+# Sphere 11
+/gate/source/addSource						F18source11
+/gate/source/F18source11/setActivity				100000. Bq
+/gate/source/F18source11/gps/particle 				e+ 
+/gate/source/F18source11/gps/energytype 			Fluor18 
+/gate/source/F18source11/setForcedUnstableFlag 			true 
+/gate/source/F18source11/setForcedHalfLife 			6586 s
+/gate/source/F18source11/gps/type 				Volume
+/gate/source/F18source11/gps/shape 				Sphere
+/gate/source/F18source11/gps/radius 				1.0 mm
+/gate/source/F18source11/gps/angtype 				iso
+/gate/source/F18source11/gps/centre 				100.0 100.0 0.0 mm
+/gate/source/F18source11/visualize				red
+/gate/source/F18source11/gps/confine 				phantom11
+
+
+
+
+# Sphere 12
+/gate/source/addSource						F18source12
+/gate/source/F18source12/setActivity				100000. Bq
+/gate/source/F18source12/gps/particle 				e+ 
+/gate/source/F18source12/gps/energytype 			Fluor18 
+/gate/source/F18source12/setForcedUnstableFlag 			true 
+/gate/source/F18source12/setForcedHalfLife 			6586 s
+/gate/source/F18source12/gps/type 				Volume
+/gate/source/F18source12/gps/shape 				Sphere
+/gate/source/F18source12/gps/radius 				1.0 mm
+/gate/source/F18source12/gps/angtype 				iso
+/gate/source/F18source12/gps/centre 				150.0 150.0 0.0 mm
+/gate/source/F18source12/visualize				red
+/gate/source/F18source12/gps/confine 				phantom12
+
+
+
+
+# Sphere 13
+/gate/source/addSource						F18source13
+/gate/source/F18source13/setActivity				100000. Bq
+/gate/source/F18source13/gps/particle 				e+ 
+/gate/source/F18source13/gps/energytype 			Fluor18 
+/gate/source/F18source13/setForcedUnstableFlag 			true 
+/gate/source/F18source13/setForcedHalfLife 			6586 s
+/gate/source/F18source13/gps/type 				Volume
+/gate/source/F18source13/gps/shape 				Sphere
+/gate/source/F18source13/gps/radius 				1.0 mm
+/gate/source/F18source13/gps/angtype 				iso
+/gate/source/F18source13/gps/centre 				250.0 0.0 0.0 mm
+/gate/source/F18source13/visualize				red
+/gate/source/F18source13/gps/confine 				phantom13
+
+
+
+# Sphere 14
+/gate/source/addSource						F18source14
+/gate/source/F18source14/setActivity				100000. Bq
+/gate/source/F18source14/gps/particle 				e+ 
+/gate/source/F18source14/gps/energytype 				Fluor18 
+/gate/source/F18source14/setForcedUnstableFlag 			true 
+/gate/source/F18source14/setForcedHalfLife 			6586 s
+/gate/source/F18source14/gps/type 				Volume
+/gate/source/F18source14/gps/shape 				Sphere
+/gate/source/F18source14/gps/radius 				1.0 mm
+/gate/source/F18source14/gps/angtype 				iso
+/gate/source/F18source14/gps/centre 				0.0 10.0 500.0 mm
+/gate/source/F18source14/visualize				red
+/gate/source/F18source14/gps/confine 				phantom14
+
+
+
+
+# Sphere 15
+/gate/source/addSource						F18source15
+/gate/source/F18source15/setActivity				100000. Bq
+/gate/source/F18source15/gps/particle 				e+ 
+/gate/source/F18source15/gps/energytype 				Fluor18 
+/gate/source/F18source15/setForcedUnstableFlag 			true 
+/gate/source/F18source15/setForcedHalfLife 			6586 s
+/gate/source/F18source15/gps/type 				Volume
+/gate/source/F18source15/gps/shape 				Sphere
+/gate/source/F18source15/gps/radius 				1.0 mm
+/gate/source/F18source15/gps/angtype 				iso
+/gate/source/F18source15/gps/centre 				0.0 50.0 500.0 mm
+/gate/source/F18source15/visualize				red
+/gate/source/F18source15/gps/confine 				phantom15
+
+
+
+
+# Sphere 16
+/gate/source/addSource						F18source16
+/gate/source/F18source16/setActivity				100000. Bq
+/gate/source/F18source16/gps/particle 				e+ 
+/gate/source/F18source16/gps/energytype 				Fluor18 
+/gate/source/F18source16/setForcedUnstableFlag 			true 
+/gate/source/F18source16/setForcedHalfLife 			6586 s
+/gate/source/F18source16/gps/type 				Volume
+/gate/source/F18source16/gps/shape 				Sphere
+/gate/source/F18source16/gps/radius 				1.0 mm
+/gate/source/F18source16/gps/angtype 				iso
+/gate/source/F18source16/gps/centre 				0.0 100.0 500.0 mm
+/gate/source/F18source16/visualize				red
+/gate/source/F18source16/gps/confine 				phantom16
+
+
+
+
+# Sphere 17
+/gate/source/addSource						F18source17
+/gate/source/F18source17/setActivity				100000. Bq
+/gate/source/F18source17/gps/particle 				e+ 
+/gate/source/F18source17/gps/energytype 				Fluor18 
+/gate/source/F18source17/setForcedUnstableFlag 			true 
+/gate/source/F18source17/setForcedHalfLife 			6586 s
+/gate/source/F18source17/gps/type 				Volume
+/gate/source/F18source17/gps/shape 				Sphere
+/gate/source/F18source17/gps/radius 				1.0 mm
+/gate/source/F18source17/gps/angtype 				iso
+/gate/source/F18source17/gps/centre 				0.0 150.0 500.0 mm
+/gate/source/F18source17/visualize				red
+/gate/source/F18source17/gps/confine 				phantom17
+
+
+
+
+# Sphere 18
+/gate/source/addSource						F18source18
+/gate/source/F18source18/setActivity				100000. Bq
+/gate/source/F18source18/gps/particle 				e+ 
+/gate/source/F18source18/gps/energytype 				Fluor18 
+/gate/source/F18source18/setForcedUnstableFlag 			true 
+/gate/source/F18source18/setForcedHalfLife 			6586 s
+/gate/source/F18source18/gps/type 				Volume
+/gate/source/F18source18/gps/shape 				Sphere
+/gate/source/F18source18/gps/radius 				1.0 mm
+/gate/source/F18source18/gps/angtype 				iso
+/gate/source/F18source18/gps/centre 				0.0 200.0 500.0 mm
+/gate/source/F18source18/visualize				red
+/gate/source/F18source18/gps/confine 				phantom18
+
+
+
+
+# Sphere 19
+/gate/source/addSource						F18source19
+/gate/source/F18source19/setActivity				100000. Bq
+/gate/source/F18source19/gps/particle 				e+ 
+/gate/source/F18source19/gps/energytype 				Fluor18 
+/gate/source/F18source19/setForcedUnstableFlag 			true 
+/gate/source/F18source19/setForcedHalfLife 			6586 s
+/gate/source/F18source19/gps/type 				Volume
+/gate/source/F18source19/gps/shape 				Sphere
+/gate/source/F18source19/gps/radius 				1.0 mm
+/gate/source/F18source19/gps/angtype 				iso
+/gate/source/F18source19/gps/centre 				50.0 0.0 500.0 mm
+/gate/source/F18source19/visualize				red
+/gate/source/F18source19/gps/confine 				phantom19
+
+# Sphere 20
+/gate/source/addSource						F18source20
+/gate/source/F18source20/setActivity				100000. Bq
+/gate/source/F18source20/gps/particle 				e+ 
+/gate/source/F18source20/gps/energytype 				Fluor18 
+/gate/source/F18source20/setForcedUnstableFlag 			true 
+/gate/source/F18source20/setForcedHalfLife 			6586 s
+/gate/source/F18source20/gps/type 				Volume
+/gate/source/F18source20/gps/shape 				Sphere
+/gate/source/F18source20/gps/radius 				1.0 mm
+/gate/source/F18source20/gps/angtype 				iso
+/gate/source/F18source20/gps/centre 				100.0 0.0 500.0 mm
+/gate/source/F18source20/visualize				red
+/gate/source/F18source20/gps/confine 				phantom20
+
+
+# Sphere 21
+/gate/source/addSource						F18source21
+/gate/source/F18source21/setActivity				100000. Bq
+/gate/source/F18source21/gps/particle 				e+ 
+/gate/source/F18source21/gps/energytype 				Fluor18 
+/gate/source/F18source21/setForcedUnstableFlag 			true 
+/gate/source/F18source21/setForcedHalfLife 			6586 s
+/gate/source/F18source21/gps/type 				Volume
+/gate/source/F18source21/gps/shape 				Sphere
+/gate/source/F18source21/gps/radius 				1.0 mm
+/gate/source/F18source21/gps/angtype 				iso
+/gate/source/F18source21/gps/centre 				150.0 0.0 500.0 mm
+/gate/source/F18source21/visualize				red
+/gate/source/F18source21/gps/confine 				phantom21
+
+
+
+
+# Sphere 22
+/gate/source/addSource						F18source22
+/gate/source/F18source22/setActivity				100000. Bq
+/gate/source/F18source22/gps/particle 				e+ 
+/gate/source/F18source22/gps/energytype 				Fluor18 
+/gate/source/F18source22/setForcedUnstableFlag 			true 
+/gate/source/F18source22/setForcedHalfLife 			6586 s
+/gate/source/F18source22/gps/type 				Volume
+/gate/source/F18source22/gps/shape 				Sphere
+/gate/source/F18source22/gps/radius 				1.0 mm
+/gate/source/F18source22/gps/angtype 				iso
+/gate/source/F18source22/gps/centre 				200.0 0.0 500.0 mm
+/gate/source/F18source22/visualize				red
+/gate/source/F18source22/gps/confine 				phantom22
+
+
+
+
+# Sphere 23
+/gate/source/addSource						F18source23
+/gate/source/F18source23/setActivity				100000. Bq
+/gate/source/F18source23/gps/particle 				e+ 
+/gate/source/F18source23/gps/energytype 			Fluor18 
+/gate/source/F18source23/setForcedUnstableFlag 			true 
+/gate/source/F18source23/setForcedHalfLife 			6586 s
+/gate/source/F18source23/gps/type 				Volume
+/gate/source/F18source23/gps/shape 				Sphere
+/gate/source/F18source23/gps/radius 				1.0 mm
+/gate/source/F18source23/gps/angtype 				iso
+/gate/source/F18source23/gps/centre 				50.0 50.0 500.0 mm
+/gate/source/F18source23/visualize				red
+/gate/source/F18source23/gps/confine 				phantom23
+
+
+
+
+# Sphere 24
+/gate/source/addSource						F18source24
+/gate/source/F18source24/setActivity				100000. Bq
+/gate/source/F18source24/gps/particle 				e+ 
+/gate/source/F18source24/gps/energytype 			Fluor18 
+/gate/source/F18source24/setForcedUnstableFlag 			true 
+/gate/source/F18source24/setForcedHalfLife 			6586 s
+/gate/source/F18source24/gps/type 				Volume
+/gate/source/F18source24/gps/shape 				Sphere
+/gate/source/F18source24/gps/radius 				1.0 mm
+/gate/source/F18source24/gps/angtype 				iso
+/gate/source/F18source24/gps/centre 				100.0 100.0 500.0 mm
+/gate/source/F18source24/visualize				red
+/gate/source/F18source24/gps/confine 				phantom24
+
+
+
+
+# Sphere 25
+/gate/source/addSource						F18source25
+/gate/source/F18source25/setActivity				100000. Bq
+/gate/source/F18source25/gps/particle 				e+ 
+/gate/source/F18source25/gps/energytype 			Fluor18 
+/gate/source/F18source25/setForcedUnstableFlag 			true 
+/gate/source/F18source25/setForcedHalfLife 			6586 s
+/gate/source/F18source25/gps/type 				Volume
+/gate/source/F18source25/gps/shape 				Sphere
+/gate/source/F18source25/gps/radius 				1.0 mm
+/gate/source/F18source25/gps/angtype 				iso
+/gate/source/F18source25/gps/centre 				150.0 150.0 500.0 mm
+/gate/source/F18source25/visualize				red
+/gate/source/F18source25/gps/confine 				phantom25
+
+
+
+
+# Sphere 26
+/gate/source/addSource						F18source26
+/gate/source/F18source26/setActivity				100000. Bq
+/gate/source/F18source26/gps/particle 				e+ 
+/gate/source/F18source26/gps/energytype 			Fluor18 
+/gate/source/F18source26/setForcedUnstableFlag 			true 
+/gate/source/F18source26/setForcedHalfLife 			6586 s
+/gate/source/F18source26/gps/type 				Volume
+/gate/source/F18source26/gps/shape 				Sphere
+/gate/source/F18source26/gps/radius 				1.0 mm
+/gate/source/F18source26/gps/angtype 				iso
+/gate/source/F18source26/gps/centre 				250.0 0.0 500.0 mm
+/gate/source/F18source26/visualize				red
+/gate/source/F18source26/gps/confine 				phantom26
+
+
+
+
+
+
+
+
+/gate/source/list
+
